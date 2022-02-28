@@ -1,0 +1,377 @@
+/* Reseting to default the any browser format*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Navigation pane */
+#navbar{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #FFCB77;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+#navbar ul{
+  display: flex;
+}
+
+#navbar li{
+  list-style-type: none;
+  margin: 1rem;
+}
+
+a{
+  font-size: 1.5rem;
+}
+
+#navbar a{
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Putting the hover method inside a media query will make it only work in devices that have mouse feature, in other words, it will turn off the hover on mobiles */
+@media (hover:hover){
+#navbar a:hover{
+  background-color: #227C9D;
+/*   color: white; */
+  border-radius: 100%;
+  }
+}
+
+/* Welcome section */
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #FE6D73;
+}
+
+/* Set up for centering the container holding my portfolio picture */
+/* ..."Below is the best all-around solution I could build to vertically and horizontally center a fixed-width, flexible height content box. It was tested and worked for recent versions of Firefox, Opera, Chrome, and Safari."... */
+/* Refers to: https://stackoverflow.com/questions/396145/how-can-i-vertically-center-a-div-element-for-all-browsers-using-css/56805022#56805022 */
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  /*   width: 400px; */
+}
+/* End of the set up */
+
+#image-myself {
+  /*   display: block; */
+  margin: auto;
+  border-radius: 50%;
+  width: 30%;
+  height: 0;
+  padding-bottom: calc(52% * 9 / 16);
+  background-image: url("https://lh3.googleusercontent.com/pw/AM-JKLVQnN3r0a59qpxlUAm5KHSklxAdBUEVhvtEuZ7zfzHSm9M8tgmWiQ6xmbgDk36Nnw0VBe8FaJg1_E4QKUJNZQmuwMyqXIMiuJ0eCWjPlFsLgL9TOJ9hDM1y-8pD7qfJOCPLsX9AnPyIvu6DHowkV5sJig=w421-h420-no");
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-attachment: relative;
+  background-position: center;
+}
+
+
+/* About Me section */
+#about-me {
+  width: 100%;
+  /*   vh to let it take the full view height */
+  /*   height: 100vh; */
+  height: 100%;
+  background-color: #FEF9EF;
+  color: black;
+/*   font-weight: bold; */
+  display: block;
+  margin: auto;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  /*   font-size: 4.5vw; */
+  font-size: 4rem;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+p {
+  padding: 0 30px 30px 30px;
+  /*   font-size: 1.5vw; */
+  font-size: 1.5rem;
+  text-align: justify;
+/*   font-weight: bold; */
+}
+
+
+/* Projects section */
+#projects {
+  background-color: #17C3B2;
+  width: 100%;
+  /*   vh to let it take the full view height */
+  /*   height: 100vh; */
+  height: 100%;
+}
+
+#projects h1 {
+  padding-top: 60px;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 4rem;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.project-tile {
+  padding: 2rem 0.5rem;
+  text-align: center;
+}
+
+#projects a{
+  text-decoration: none;
+}
+
+/* Media query to turn off the hover on mobile devices */
+@media (hover:hover){
+#projects a:hover{
+  background-color: #FE6D73;
+  border-radius: 5%;
+  }
+}
+
+/* Contact Me section */
+#contact-me {
+  background-color: #227C9D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
+#contact-me p{
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+#contact-me a{
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: #FFCB77;
+  border-radius: 0%;
+  color: black;
+  font-weight: bold;
+}
+
+/* Media qyuery to turn off the hover method on mobile devices */
+@media (hover:hover){
+#contact-me a:hover{
+  text-decoration: underline overline dotted #FE6D73;
+  }
+}
+
+/* Final / Adjustments on the styling */
+#welcome-section p:first-of-type,
+#projects > p,
+#contact-me p:first-of-type {
+  text-align: center;
+  padding-bottom: 30px;
+  /*   font-size: 2.5vw; */
+  font-size: 2rem;
+}
+
+#projects h1,
+#projects p {
+  color: #f8f8ff;
+}
+
+
+/* Media queries to make the page responsive at various levels of width / devices */
+
+/* *********************************** 1080px *********************************** */
+@media (max-width: 1080px){
+  
+  h1{
+    font-size: 3.15rem;
+  }
+  
+#welcome-section p:first-of-type,
+#projects > p,
+#contact-me p:first-of-type {
+  font-size: 2.25rem;
+}
+  
+  p ,a {
+    font-size: 1.35rem;
+  }
+}
+
+/* *********************************** 960px *********************************** */
+@media (max-width: 960px){
+  
+  h1{
+    font-size: 3.475rem;
+  }
+  
+#welcome-section p:first-of-type,
+#projects > p,
+#contact-me p:first-of-type {
+  font-size: 2.125rem;
+}
+  
+  p ,a {
+    font-size: 1.275rem;
+  }}
+
+/* *********************************** 840px *********************************** */
+@media (max-width: 840px){
+  
+  h1{
+    font-size: 2.8rem;
+  }
+  
+#welcome-section p:first-of-type,
+#projects > p,
+#contact-me p:first-of-type {
+  font-size: 2rem;
+}
+  
+  p ,a {
+    font-size: 1.2rem;
+  }
+  #contact-me a{
+    display: block;
+  }
+
+}
+
+/* *********************************** 720px *********************************** */
+@media (max-width: 720px){
+  
+  h1{
+    font-size: 2.625rem;
+  }
+  
+#welcome-section p:first-of-type,
+#projects > p,
+#contact-me p:first-of-type {
+  font-size: 1.875rem;
+}
+  
+  p ,a {
+    font-size: 1.125rem;
+  }}
+
+/* *********************************** 600px *********************************** */
+@media (max-width: 600px){
+  
+  h1{
+    font-size: 2.45rem;
+  }
+  
+#welcome-section p:first-of-type,
+#projects > p,
+#contact-me p:first-of-type {
+  font-size: 1.75rem;
+}
+  
+  p ,a {
+    font-size: 1.05rem;
+  }}
+
+/* *********************************** 480px *********************************** */
+@media (max-width: 480px){
+  
+  h1{
+    font-size: 2.275rem;
+  }
+  
+#welcome-section p:first-of-type,
+#projects > p,
+#contact-me p:first-of-type {
+  font-size: 1.625rem;
+}
+  
+  p ,a {
+    font-size: 0.975rem;
+  }
+
+  p{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+#navbar li{
+  margin: .1rem;
+  padding: .1rem;
+  }
+  #navbar a{
+    font-size: .75rem;
+    padding: .75rem;
+/*     padding-right: .5rem; */
+    ;
+  }
+  
+  #contact-me a{
+    font-size: .75rem;
+  }
+  
+  #contact-me h1{
+    font-size: 1.275rem;
+    padding: 0;
+     margin: 10px 0;
+    margin-top: -5rem;
+    
+  }
+   #contact-me p:first-of-type{
+    font-size: 1.225rem;
+     padding: 0;
+     margin: 10px 0;
+  }
+  
+  #welcome-section h1{
+    margin-top: -5rem;
+  }
+  
+    #welcome-section p{
+    margin-top: -1rem;
+  }
+}
