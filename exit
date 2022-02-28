@@ -1,0 +1,43 @@
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+[1mdiff --git a/index.html b/index.html[m
+[1mindex f793e0e..7e2384c 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -66,23 +66,28 @@[m
+   <p>This is my first portfolio, and these are my very first projects using just HTML and CSS.</p>[m
+   <div id="project-container">[m
+     [m
+[31m-    <a target="_blank" href="https://codepen.io/shyllenno/full/bGYewNQ">[m
+[32m+[m[32m<!-- freeCodeCamp, Responsive Web Design Certification, project 1 -->[m
+[32m+[m[32m    <a target="_blank" href="https://shyllenno.github.io/fcc-web-design-p1-survey-form/">[m
+       <img alt="" class="project-image" src="https://lh3.googleusercontent.com/pw/AM-JKLVOviqT0MeDuiRRwhMAEQvIQ4fh0YGSxvV9rTBvh3WsZ6H2fv09_x6CVWznrJ2sP5Nn4OPH9zNWSph-mnK7FZxitST5NixYTShF__8HzK-3dkmvwe0GL4xzyL16R3gaxBnfa9FRKJ40Dj57xCEcqVIYOQ=w695-h680-no" />[m
+       <p class="p1 project-tile">Project 1: Building a Survey Form</p></a>[m
+     [m
+[31m-    <a target="_blank" href="https://codepen.io/shyllenno/full/oNoYXJQ">[m
+[32m+[m[32m<!-- freeCodeCamp, Responsive Web Design Certification, project 2 -->[m
+[32m+[m[32m    <a target="_blank" href="https://shyllenno.github.io/fcc-web-design-p2-tribute-page/">[m
+       <img alt="" class="project-image" src="https://lh3.googleusercontent.com/pw/AM-JKLVauW5-Zf6eNBgtEXR8Wrnp0QhF35tFTKVNwELrYV9HNNYpH9A-TosGDzQDbTJ4uA5AprZJORwracSqqJ3AB8z7K1QdbVndBbY1D4t4LPjfQ-RauEVeymK3pthF4RLAuPdsfM5JCLKq8FMVotMykRJL7A=w695-h675-no" />[m
+       <p class="p2 project-tile">Project 2: Building a Tribute Page</p></a>[m
+[31m-    [m
+[31m-    <a target="_blank" href="https://codepen.io/shyllenno/full/RwjaeVb">[m
+[32m+[m
+[32m+[m[32m<!-- freeCodeCamp, Responsive Web Design Certification, project 3 -->[m[41m    [m
+[32m+[m[32m    <a target="_blank" href="https://shyllenno.github.io/fcc-web-design-p3-technical-documentation-page/">[m
+       <img alt="" class="project-image" src="https://lh3.googleusercontent.com/pw/AM-JKLW6rshcNwdQjLdR6p4WoWdebzFWyXymrlcxN5smVD6XUoThbtSx1TgoYFh4w1XZlJKSJbN2TvtHtDF8N3Xde0F4drxlPSsDbUi_-yVmJyGA_6GUUBWGzcU_FIbxVvIDo3XAeh5JXJnJbeAjizId9fv6Jw=w698-h682-no" />[m
+       <p class="p3 project-tile">Project 3: Building a Technical Documentation Page</p></a>[m
+[31m-    [m
+[31m-    <a target="_blank" href="https://codepen.io/shyllenno/full/yLPgooQ">[m
+[32m+[m
+[32m+[m[32m<!-- freeCodeCamp, Responsive Web Design Certification, project 4 -->[m[41m    [m
+[32m+[m[32m    <a target="_blank" href="https://shyllenno.github.io/fcc-web-design-p4-landing-page/">[m
+       <img alt="" class="project-image" src="https://lh3.googleusercontent.com/pw/AM-JKLVIPC3gDy3PureGa5gPJoYf-O5ISRrEamm6q95xdbg-FkZNaKEZBOf44N78U5vBdgpL2biUpBaM6ytklE6Bp4OLZ1XRmVuE7SZXFQV2l8w-sTEvt3JEkYqh9edtH8T59xXqPEGxgXuVW0lyp7XhGnpEAw=w619-h597-no" />[m
+       <p class="p4 project-tile">Project 4: Building a Product Landing Page</p></a>[m
+[31m-    [m
+[31m-    <a target="_blank" href="https://codepen.io/shyllenno/full/zYPzVyZ">[m
+[32m+[m
+[32m+[m[32m<!-- freeCodeCamp, Responsive Web Design Certification, project 5 -->[m[41m    [m
+[32m+[m[32m    <a target="_blank" href="https://shyllenno.github.io/fcc-web-design-p5-personal-portfolio-webpage/">[m
+       <img alt="" class="project-image" src="https://lh3.googleusercontent.com/pw/AM-JKLUSMoXBhP8ymjx4k-hCoSB-vSACPbjSZ8Dsr0-TJH2lQcRIKms1lhFgfES1HqX-KSuGi3AzJ_oV25kYQd0JdjOL81s0dk9JUw5PfTozjUbWrS0V2kCs5L_I9CMwc85yBexG42O24fJ8BhgAkMkpObbmhA=w700-h689-no" />[m
+       <p class="p5 project-tile">Project 5: Building a Personal Portfolio Webpage</p></a>[m
+   </div>[m
